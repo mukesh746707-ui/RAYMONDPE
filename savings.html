@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RAYMOND PE</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#050505;
+color:#fff;
+overflow-x:hidden;
+}
+
+a{
+text-decoration:none;
+color:white;
+}
+
+.container{
+width:100%;
+max-width:430px;
+margin:auto;
+padding:18px;
+}
+
+.card{
+background:#121212;
+border:1px solid #d4af37;
+border-radius:18px;
+padding:18px;
+margin-top:18px;
+box-shadow:0 0 15px rgba(212,175,55,.18);
+}
+
+.gold{
+color:#d4af37;
+}
+
+.center{
+text-align:center;
+}
+
+.grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:15px;
+margin-top:18px;
+}
+
+.item{
+background:#1a1a1a;
+border:1px solid #d4af37;
+border-radius:16px;
+padding:20px;
+text-align:center;
+transition:.3s;
+}
+
+.item:active{
+transform:scale(.96);
+}
+
+button{
+width:100%;
+padding:14px;
+background:#d4af37;
+border:none;
+border-radius:12px;
+font-size:16px;
+font-weight:bold;
+margin-top:15px;
+}
+
+input{
+width:100%;
+padding:14px;
+background:#222;
+border:1px solid #555;
+border-radius:12px;
+color:white;
+margin-top:12px;
+}
+
+</style>
+
+</head>
+
+<body>
+<div class="container">
+
+<div class="card center">
+
+<img src="https://i.ibb.co/67bPJSBQ/124860.jpg"
+style="width:110px;height:110px;border-radius:50%;border:3px solid #d4af37;">
+
+<h1 class="gold" style="margin-top:15px;">
+RAYMOND PE
+</h1>
+
+<p style="color:#bbb;margin-top:10px;">
+Premium Banking Portal
+</p>
+
+<input
+type="text"
+id="username"
+placeholder="Username">
+
+<input
+type="password"
+id="password"
+placeholder="Password">
+
+<button onclick="login()">
+LOGIN
+</button>
+
+<p
+id="error"
+style="color:red;margin-top:12px;">
+</p>
+
+</div>
+
+<div
+id="dashboard"
+style="display:none;">
+
+<div class="card center">
+
+<h2 class="gold">
+👑 RAYMOND PE
+</h2>
+
+<div style="
+margin-top:18px;
+background:#1b1b1b;
+padding:15px;
+border-radius:15px;
+border:1px solid #d4af37;">
+
+<div id="datetime">
+Loading...
+</div>
+
+<div style="
+margin-top:12px;
+color:#ffd700;
+font-weight:bold;">
+
+🟡 Account Status : Pending
+
+</div>
+
+<div style="
+margin-top:15px;
+padding:12px;
+background:#000;
+border-radius:12px;
+border:1px solid #d4af37;">
+
+Activation Amount
+
+<h2 class="gold">
+₹1999
+</h2>
+
+</div>
+
+</div>
+<div class="grid">
+
+<a href="savings.html">
+
+<div class="item">
+
+<div style="font-size:38px;">💰</div>
+
+<h3 style="margin-top:10px;" class="gold">
+Savings
+</h3>
+
+<p style="color:#aaa;font-size:13px;">
+Secure Account
+</p>
+
+</div>
+
+</a>
+
+<a href="current.html">
+
+<div class="item">
+
+<div style="font-size:38px;">🏦</div>
+
+<h3 style="margin-top:10px;" class="gold">
+Current
+</h3>
+
+<p style="color:#aaa;font-size:13px;">
+Business Account
+</p>
+
+</div>
+
+</a>
+
+<a href="corporate.html">
+
+<div class="item">
+
+<div style="font-size:38px;">🏢</div>
+
+<h3 style="margin-top:10px;" class="gold">
+Corporate
+</h3>
+
+<p style="color:#aaa;font-size:13px;">
+Corporate Banking
+</p>
+
+</div>
+
+</a>
+
+<a href="withdrawal.html">
+
+<div class="item">
+
+<div style="font-size:38px;">💸</div>
+
+<h3 style="margin-top:10px;" class="gold">
+Withdrawal
+</h3>
+
+<p style="color:#aaa;font-size:13px;">
+Withdraw Funds
+</p>
+
+</div>
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3 class="gold center">
+📊 Available Categories
+</h3>
+
+<div style="margin-top:18px;line-height:32px;">
+
+<b>🎮 Gaming Fund</b><br>
+5% Return per Day<br>
+7–10 Days
+
+<hr style="margin:15px 0;border-color:#333;">
+
+<b>🔹 Mixed Fund</b><br>
+10% Return per Day<br>
+4–5 Days
+
+<hr style="margin:15px 0;border-color:#333;">
+
+<b>⚡ Hazardous Fund</b><br>
+18% Return per Day<br>
+3–5 Days
+
+</div>
+
+</div>
+<div class="card">
+
+<h3 class="gold center">
+💳 Account Activation
+</h3>
+
+<div style="
+background:#1b1b1b;
+border:2px solid #d4af37;
+border-radius:15px;
+padding:18px;
+margin-top:18px;
+text-align:center;">
+
+<p style="color:#bbb;">
+Activation Amount
+</p>
+
+<h2 class="gold" style="font-size:34px;">
+₹1999
+</h2>
+
+</div>
+
+<div style="margin-top:20px;">
+
+<h4 class="gold">
+Scan QR Code
+</h4>
+
+<img
+src="https://i.ibb.co/LMQ2yVh/Screenshot-20260629-201848-Fam-App.png"
+style="
+width:100%;
+margin-top:12px;
+border-radius:15px;
+border:2px solid #d4af37;">
+
+</div>
+
+<div style="margin-top:20px;">
+
+<label class="gold">
+UTR Number
+</label>
+
+<input
+type="text"
+id="utr"
+maxlength="12"
+placeholder="Enter 12 Digit UTR">
+
+<label class="gold" style="margin-top:15px;display:block;">
+Upload Screenshot
+</label>
+
+<input
+type="file"
+accept="image/*">
+
+<button onclick="submitDetails()">
+Submit Details
+</button>
+
+</div>
+
+</div>
+<div class="card">
+
+<h3 class="gold center">
+🛡️ Official Notice
+</h3>
+
+<p style="
+margin-top:15px;
+line-height:28px;
+text-align:center;
+color:#cccccc;">
+
+RAYMOND PE is our only official platform.
+
+<br><br>
+
+Do not trust any fake website, application,
+Telegram channel or person claiming to
+represent RAYMOND PE.
+
+<br><br>
+
+Always verify before making any transaction.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3 class="gold center">
+📞 Official Support
+</h3>
+
+<p style="
+text-align:center;
+margin-top:15px;
+font-size:20px;
+font-weight:bold;
+color:#d4af37;">
+
+@RAYMONDPEOFFICIALS
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+const users=[
+"Arpit01",
+"Deepak01",
+"Suman11",
+"Well02",
+"Saksham9",
+"Jai01",
+"Abhishek88",
+"Alpha10",
+"Staff90"
+];
+
+const password="Admin@7890pe";
+
+function login(){
+
+let u=document.getElementById("username").value.trim();
+
+let p=document.getElementById("password").value.trim();
+
+if(users.includes(u) && p===password){
+
+document.querySelector(".container>.card").style.display="none";
+
+document.getElementById("dashboard").style.display="block";
+
+updateTime();
+
+setInterval(updateTime,1000);
+
+}else{
+
+document.getElementById("error").innerHTML="Invalid Username or Password";
+
+}
+
+}
+
+function updateTime(){
+
+const now=new Date();
+
+document.getElementById("datetime").innerHTML=
+
+"📅 "+now.toLocaleDateString()+
+"<br>🕒 "+
+now.toLocaleTimeString();
+
+}
+
+function submitDetails(){
+
+let utr=document.getElementById("utr").value;
+
+if(utr.length!=12){
+
+alert("Please enter a valid 12-digit UTR Number.");
+
+return;
+
+}
+
+alert("Request Submitted Successfully.");
+
+}
+
+</script>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Savings | RAYMOND PE</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#050505;
+color:#fff;
+}
+
+.container{
+width:100%;
+max-width:430px;
+margin:auto;
+padding:20px;
+}
+
+.card{
+background:#121212;
+border:1px solid #d4af37;
+border-radius:18px;
+padding:20px;
+box-shadow:0 0 15px rgba(212,175,55,.20);
+}
+
+h1{
+color:#d4af37;
+text-align:center;
+margin-bottom:20px;
+}
+
+input{
+width:100%;
+padding:14px;
+margin-top:15px;
+background:#1d1d1d;
+border:1px solid #555;
+border-radius:12px;
+color:white;
+font-size:15px;
+}
+
+button{
+width:100%;
+padding:15px;
+margin-top:20px;
+background:#d4af37;
+color:#000;
+font-size:16px;
+font-weight:bold;
+border:none;
+border-radius:12px;
+cursor:pointer;
+}
+
+.back{
+display:block;
+margin-top:20px;
+text-align:center;
+color:#d4af37;
+text-decoration:none;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<h1>💰 Savings</h1>
+
+<input type="text" placeholder="Account Holder Name">
+
+<input type="text" placeholder="Bank Name">
+
+<input type="text" placeholder="Account Number">
+
+<input type="text" placeholder="IFSC Code">
+<button onclick="saveDetails()">
+Submit
+</button>
+
+<a href="index.html" class="back">
+⬅ Back to Dashboard
+</a>
+
+</div>
+
+</div>
+
+<script>
+
+function saveDetails(){
+
+const holder=document.querySelectorAll("input")[0].value;
+const bank=document.querySelectorAll("input")[1].value;
+const account=document.querySelectorAll("input")[2].value;
+const ifsc=document.querySelectorAll("input")[3].value;
+
+if(holder=="" || bank=="" || account=="" || ifsc==""){
+
+alert("Please fill all details.");
+
+return;
+
+}
+
+alert("Savings request submitted successfully.");
+
+}
+
+</script>
+
+</body>
+
+</html>
