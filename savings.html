@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Savings | RAYMOND PE</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#050505;
+color:#fff;
+}
+
+.container{
+max-width:430px;
+margin:25px auto;
+padding:20px;
+}
+
+.card{
+background:#111;
+border:1px solid #d4af37;
+border-radius:18px;
+padding:20px;
+box-shadow:0 0 20px rgba(212,175,55,.2);
+}
+
+h1{
+text-align:center;
+color:#d4af37;
+margin-bottom:20px;
+}
+
+input{
+width:100%;
+padding:15px;
+margin-top:15px;
+background:#1d1d1d;
+color:#fff;
+border:1px solid #555;
+border-radius:12px;
+font-size:15px;
+}
+
+button{
+width:100%;
+padding:15px;
+margin-top:20px;
+background:#d4af37;
+color:#000;
+font-size:17px;
+font-weight:bold;
+border:none;
+border-radius:12px;
+cursor:pointer;
+}
+
+.back{
+display:block;
+margin-top:20px;
+text-align:center;
+color:#d4af37;
+text-decoration:none;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<h1>💰 Savings</h1>
+
+<input type="text" placeholder="Account Holder Name">
+
+<input type="text" placeholder="Bank Name">
+
+<input type="text" placeholder="Account Number">
+
+<input type="text" placeholder="IFSC Code">
+
+<button onclick="submitForm()">
+Submit
+</button>
+
+<a href="index.html" class="back">
+⬅ Back to Dashboard
+</a>
+
+</div>
+
+</div>
+
+<script>
+
+function submitForm(){
+
+alert("Savings request submitted successfully.");
+
+}
+
+</script>
+
+</body>
+</html>

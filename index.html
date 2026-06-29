@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RAYMOND PE</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#000;
+background-image:
+radial-gradient(circle at top,#2b2200,#000 70%);
+color:#fff;
+}
+
+.page{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:20px;
+}
+
+.card{
+width:100%;
+max-width:430px;
+background:#111;
+border:2px solid #d4af37;
+border-radius:25px;
+padding:25px;
+box-shadow:0 0 30px rgba(212,175,55,.25);
+}
+
+.logo{
+width:110px;
+height:110px;
+display:block;
+margin:auto;
+border-radius:50%;
+border:3px solid #d4af37;
+}
+
+h1{
+text-align:center;
+margin-top:15px;
+color:#d4af37;
+font-size:32px;
+letter-spacing:2px;
+}
+
+.subtitle{
+text-align:center;
+margin:15px 0 25px;
+color:#ddd;
+}
+
+input{
+width:100%;
+padding:15px;
+margin:10px 0;
+background:#1a1a1a;
+border:1px solid #555;
+border-radius:12px;
+color:#fff;
+font-size:16px;
+}
+
+button{
+width:100%;
+padding:15px;
+margin-top:12px;
+border:none;
+border-radius:12px;
+background:linear-gradient(90deg,#d4af37,#f5d76e);
+color:#000;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+}
+
+button:hover{
+transform:scale(1.02);
+}
+
+#error{
+margin-top:12px;
+text-align:center;
+color:#ff4d4d;
+font-weight:bold;
+}
+
+#dashboard{
+display:none;
+}
+
+.box{
+background:#1a1a1a;
+border:1px solid #d4af37;
+border-radius:18px;
+padding:18px;
+margin-top:18px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:15px;
+}
+
+.item{
+background:#222;
+border:1px solid #d4af37;
+border-radius:15px;
+padding:18px;
+text-align:center;
+transition:.3s;
+}
+
+.item:hover{
+transform:translateY(-5px);
+box-shadow:0 0 15px rgba(212,175,55,.35);
+}
+
+a{
+text-decoration:none;
+color:white;
+}
+
+</style>
+
+</head>
+
+<body>
+<!-- LOGIN PAGE -->
+
+<div class="page" id="login">
+
+<div class="card">
+
+<img class="logo"
+src="https://i.ibb.co/67bPJSBQ/124860.jpg"
+alt="RAYMOND PE">
+
+<h1>RAYMOND PE</h1>
+
+<p class="subtitle">
+Premium Partner Login
+</p>
+
+<input
+id="username"
+type="text"
+placeholder="Enter Username">
+
+<input
+id="password"
+type="password"
+placeholder="Enter Password">
+
+<button onclick="login()">
+LOGIN
+</button>
+
+<p id="error"></p>
+
+<div style="margin-top:25px;text-align:center;color:#999;font-size:13px;">
+
+━━━━━━━━━━━━━━━━━━
+
+<br><br>
+
+🔒 Secure Login Portal
+
+<br><br>
+
+© 2026 RAYMOND PE
+
+</div>
+
+</div>
+
+</div>
+
+<!-- DASHBOARD -->
+
+<div class="page" id="dashboard">
+
+<div class="card">
+
+<img class="logo"
+src="https://i.ibb.co/67bPJSBQ/124860.jpg"
+alt="Logo">
+
+<h1>👑 RAYMOND PE</h1>
+
+<p class="subtitle">
+Premium Dashboard
+</p>
+
+<div class="box">
+
+<div id="datetime"
+style="text-align:center;font-size:17px;font-weight:bold;">
+Loading...
+</div>
+
+<div style="
+margin-top:15px;
+text-align:center;
+color:#ffd700;
+font-weight:bold;
+font-size:18px;">
+
+🟡 Account Status : Pending
+
+</div>
+
+<div style="
+margin-top:18px;
+background:#000;
+border:2px solid #d4af37;
+border-radius:15px;
+padding:15px;
+text-align:center;">
+
+<div style="color:#bbb;">
+Activation Amount
+</div>
+
+<h1 style="
+margin-top:10px;
+color:#d4af37;
+font-size:38px;">
+
+₹1999
+
+</h1>
+
+</div>
+
+</div>
+<!-- DASHBOARD MENU -->
+
+<div class="box">
+
+<div class="grid">
+
+<a href="savings.html">
+
+<div class="item">
+
+<div style="font-size:35px;">💰</div>
+
+<div style="margin-top:10px;font-size:18px;">
+Savings
+</div>
+
+</div>
+
+</a>
+
+<a href="current.html">
+
+<div class="item">
+
+<div style="font-size:35px;">🏦</div>
+
+<div style="margin-top:10px;font-size:18px;">
+Current
+</div>
+
+</div>
+
+</a>
+
+<a href="corporate.html">
+
+<div class="item">
+
+<div style="font-size:35px;">🏢</div>
+
+<div style="margin-top:10px;font-size:18px;">
+Corporate
+</div>
+
+</div>
+
+</a>
+
+<a href="withdrawal.html">
+
+<div class="item">
+
+<div style="font-size:35px;">💸</div>
+
+<div style="margin-top:10px;font-size:18px;">
+Withdrawal
+</div>
+
+</div>
+
+</a>
+
+</div>
+
+</div>
+
+<!-- AVAILABLE CATEGORIES -->
+
+<div class="box">
+
+<h2 style="text-align:center;color:#d4af37;">
+📊 Available Categories
+</h2>
+
+<div style="margin-top:20px;">
+
+<div style="background:#181818;border:1px solid #d4af37;border-radius:15px;padding:18px;margin-bottom:15px
+<!-- ACCOUNT ACTIVATION -->
+
+<div class="box">
+
+<h2 style="text-align:center;color:#d4af37;">
+💳 Account Activation
+</h2>
+
+<div style="
+background:#181818;
+border:2px solid #d4af37;
+border-radius:15px;
+padding:18px;
+margin-top:18px;
+text-align:center;">
+
+<p style="color:#bbb;font-size:16px;">
+Activation Amount
+</p>
+
+<h1 style="margin-top:10px;color:#d4af37;font-size:40px;">
+₹1999
+</h1>
+
+</div>
+
+<div style="
+margin-top:20px;
+background:#181818;
+border:1px solid #d4af37;
+border-radius:15px;
+padding:18px;">
+
+<h3 style="text-align:center;color:#d4af37;">
+📱 Scan QR Code
+</h3>
+
+<img
+src="https://i.ibb.co/LMQ2yVh/Screenshot-20260629-201848-Fam-App.png"
+style="
+width:100%;
+margin-top:15px;
+border-radius:12px;
+border:1px solid #333;">
+
+<p style="
+margin-top:15px;
+text-align:center;
+color:#bbb;">
+
+Scan the QR Code and complete the payment.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- PAYMENT VERIFICATION -->
+
+<div class="box">
+
+<h2 style="text-align:center;color:#d4af37;">
+✅ Payment Verification
+</h2>
+
+<p style="margin-top:15px;color:#ccc;">
+Enter 12-Digit UTR Number
+</p>
+
+<input
+id="utr"
+type
+<!-- OFFICIAL NOTICE -->
+
+<div class="box">
+
+<h2 style="text-align:center;color:#d4af37;">
+🛡️ Official Notice
+</h2>
+
+<p style="
+margin-top:15px;
+line-height:28px;
+text-align:center;
+color:#ddd;">
+
+RAYMOND PE is our only official platform.
+
+<br><br>
+
+Do not trust any fake website, application or Telegram channel claiming to represent RAYMOND PE.
+
+<br><br>
+
+Always use our official support for assistance.
+
+</p>
+
+</div>
+
+<!-- OFFICIAL SUPPORT -->
+
+<div class="box">
+
+<h2 style="text-align:center;color:#d4af37;">
+📞 Official Support
+</h2>
+
+<p style="
+text-align:center;
+margin-top:15px;
+font-size:20px;
+font-weight:bold;
+color:#d4af37;">
+
+@RAYMONDPEOFFICIALS
+
+</p>
+
+</div>
+
+<div style="
+text-align:center;
+padding:20px;
+margin-top:20px;
+color:#888;
+font-size:13px;">
+
+<hr style="
+border:0;
+height:1px;
+background:#333;
+margin-bottom:15px;">
+
+© 2026 RAYMOND PE
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+const users=[
+"Arpit01",
+"Deepak01",
+"Suman11",
+"Well02",
+"Saksham9",
+"Jai01",
+"Abhishek88",
+"Alpha10",
+"Staff90"
+];
+
+const password="Admin@7890pe";
+
+function login(){
+
+let username=document.getElementById("username").value.trim();
+let pass=document.getElementById("password").value.trim();
+
+if(users.includes(username) && pass===password){
+
+document.getElementById("login").style.display="none";
+document.getElementById("dashboard").style.display="flex";
+
+updateTime();
+setInterval(updateTime,1000);
+
+}else{
+
+document.getElementById("error").innerHTML="❌ Wrong Username or Password";
+
+}
+
+}
+
+function updateTime(){
+
+const now=new Date();
+
+document.getElementById("datetime").innerHTML=
+
+"📅 "+now.toLocaleDateString("en-IN")+
+"<br>🕒 "+now.toLocaleTimeString("en-IN");
+
+}
+
+function submitDetails(){
+
+const utr=document.getElementById("utr").value.trim();
+
+if(utr.length!==12){
+
+alert("Please enter a valid 12-digit UTR Number.");
+return;
+
+}
+
+alert("Payment request submitted successfully.");
+
+}
+
+document.addEventListener("keypress",function(e){
+
+if(e.key==="Enter"){
+login();
+}
+
+});
+
+</script>
+
+</body>
+</html>
